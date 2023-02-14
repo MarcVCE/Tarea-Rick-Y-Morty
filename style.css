@@ -1,7 +1,6 @@
 body {
   background-image: url("rickymortybackground.jpg");;
   text-align: center;
-  font-size: 20px;
 }
 
 #characters {
@@ -24,5 +23,6 @@ img {
 } 
 
 span{
-  color:brown
+  color:rgb(199, 30, 165);
+  font-size: 20px;
 }
