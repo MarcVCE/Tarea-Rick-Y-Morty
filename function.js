@@ -1,13 +1,14 @@
 var page = 1;
 function fetchCharacters(){
     fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
-    .then(res => res.json())
+    .then(res => res.json()) 
     .then(chars => {
         var charsObj = chars.results;
+        console.log(charsObj);
         var container=document.getElementById("characters");
         container.innerHTML="";
         for(var char of charsObj){
-            container.innerHTML+=`
+            container.innerHTML+=` 
             <div>
                 <img src="${char.image}"/>
                 <div>
@@ -61,3 +62,4 @@ function fetchCharactersPrevious(){
 }
 
 window.onload = fetchCharacters();
+
