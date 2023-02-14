@@ -4,7 +4,6 @@ function fetchCharacters(){
     .then(res => res.json()) 
     .then(chars => {
         var charsObj = chars.results;
-        console.log(charsObj);
         var container=document.getElementById("characters");
         container.innerHTML="";
         for(var char of charsObj){
